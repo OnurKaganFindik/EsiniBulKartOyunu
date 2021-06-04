@@ -47,7 +47,10 @@ namespace EsiniBul
             this.ClientSize = new System.Drawing.Size(528, 531);
             this.Controls.Add(this.pnlKartlar);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Eşini Bul Oyunu";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
+            this.Shown += new System.EventHandler(this.Form1_Shown);
             this.ResumeLayout(false);
 
         }
